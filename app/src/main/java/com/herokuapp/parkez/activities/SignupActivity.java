@@ -76,9 +76,16 @@ public class SignupActivity extends MainActivity {
                             post(WebUtils.getBody(WebUtils.JSON, jsonObject.toString())).build();
                     client.newCall(request).enqueue(new Callback() {
                         @Override
-                        public void onFailure(Call call, IOException e) {
+                        public void onFailure(Call call, final IOException e) {
                             Log.e("[signup]", e.getMessage());
-                            button.setEnabled(true);
+                            SignupActivity.this.runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    button.setEnabled(true);
+                                    Toast.makeText(getApplicationContext(), "Something went wrong", Toast.LENGTH_LONG).show();
+                                    Log.e("[sign up]", "Something went wrong", e);
+                                }
+                            });
                         }
 
                         @Override

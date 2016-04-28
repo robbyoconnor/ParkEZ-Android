@@ -53,7 +53,7 @@
              this is needed to use google map methods -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyA8iNK37-JxdXTEFAFgKjEbZWMbKha63hI"/>
+            android:value="AIzaSyBW27Ml5qoGNMAy3SBk6dac0KoW3nUsDuA" />
         <!-- The app wasn't compiled with google play services
              needed to place literal value -->
         <meta-data
