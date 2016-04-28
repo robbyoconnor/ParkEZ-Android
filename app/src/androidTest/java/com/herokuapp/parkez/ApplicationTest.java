@@ -1,4 +1,4 @@
-package com.herokuapp.parkez.parkezfinal;
+package com.herokuapp.parkez;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

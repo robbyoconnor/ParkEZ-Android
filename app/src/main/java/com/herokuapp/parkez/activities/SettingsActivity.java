@@ -1,11 +1,11 @@
-package com.herokuapp.parkez.parkezfinal.activities;
+package com.herokuapp.parkez.activities;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceFragment;
 import android.util.Log;
 
-import com.herokuapp.parkez.parkezfinal.R;
+import com.herokuapp.parkez.R;
 
 /**
  * Created by xsang on 4/19/2016.

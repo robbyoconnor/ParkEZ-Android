@@ -1,4 +1,4 @@
-package com.herokuapp.parkez.parkezfinal.models;
+package com.herokuapp.parkez.models;
 
 /**
  * Created by xsang on 3/11/2016.
@@ -10,8 +10,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
-import android.location.LocationManager;
 import android.location.LocationListener;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.support.annotation.Nullable;

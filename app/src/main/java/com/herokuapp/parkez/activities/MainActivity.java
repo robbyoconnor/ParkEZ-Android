@@ -1,4 +1,4 @@
-package com.herokuapp.parkez.parkezfinal.activities;
+package com.herokuapp.parkez.activities;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,9 +12,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.herokuapp.parkez.parkezfinal.R;
-import com.herokuapp.parkez.parkezfinal.models.User;
-import com.herokuapp.parkez.parkezfinal.receivers.NetworkStateReceiver;
+import com.herokuapp.parkez.R;
+import com.herokuapp.parkez.models.User;
+import com.herokuapp.parkez.receivers.NetworkStateReceiver;
 
 public class MainActivity extends FragmentActivity {
 

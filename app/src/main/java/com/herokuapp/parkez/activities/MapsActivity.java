@@ -1,7 +1,6 @@
-package com.herokuapp.parkez.parkezfinal.activities;
+package com.herokuapp.parkez.activities;
 
 import android.Manifest;
-import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -12,7 +11,6 @@ import android.os.Bundle;
 import android.preference.PreferenceFragment;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -32,12 +30,12 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.herokuapp.parkez.parkezfinal.BuildConfig;
-import com.herokuapp.parkez.parkezfinal.R;
-import com.herokuapp.parkez.parkezfinal.models.GPSTracker;
-import com.herokuapp.parkez.parkezfinal.models.ParkingLocation;
-import com.herokuapp.parkez.parkezfinal.models.User;
-import com.herokuapp.parkez.parkezfinal.web.utils.WebUtils;
+import com.herokuapp.parkez.BuildConfig;
+import com.herokuapp.parkez.R;
+import com.herokuapp.parkez.models.GPSTracker;
+import com.herokuapp.parkez.models.ParkingLocation;
+import com.herokuapp.parkez.models.User;
+import com.herokuapp.parkez.utils.WebUtils;
 
 import java.io.IOException;
 import java.lang.reflect.Type;

@@ -1,6 +1,6 @@
-package com.herokuapp.parkez.parkezfinal.web.utils;
+package com.herokuapp.parkez.utils;
 
-import com.herokuapp.parkez.parkezfinal.models.User;
+import com.herokuapp.parkez.models.User;
 
 import org.json.JSONException;
 import org.json.JSONObject;

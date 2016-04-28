@@ -1,4 +1,4 @@
-package com.herokuapp.parkez.parkezfinal.models;
+package com.herokuapp.parkez.models;
 
 
 

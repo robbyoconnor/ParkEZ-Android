@@ -1,4 +1,4 @@
-package com.herokuapp.parkez.parkezfinal.activities;
+package com.herokuapp.parkez.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,9 +8,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.herokuapp.parkez.parkezfinal.R;
-import com.herokuapp.parkez.parkezfinal.models.User;
-import com.herokuapp.parkez.parkezfinal.web.utils.WebUtils;
+import com.herokuapp.parkez.R;
+import com.herokuapp.parkez.models.User;
+import com.herokuapp.parkez.utils.WebUtils;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -73,8 +73,15 @@ public class LoginActivity extends MainActivity {
                 client.newCall(request).enqueue(new Callback() {
                     // login fails, log the exception
                     @Override
-                    public void onFailure(Call call, IOException e) {
-                        button.setEnabled(true);
+                    public void onFailure(Call call, final IOException e) {
+                        LoginActivity.this.runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                Toast.makeText(getApplicationContext(),"Something went wrong",Toast.LENGTH_LONG).show();
+                                button.setEnabled(true);
+                                Log.e("[login]","Something went wrong",e);
+                            }
+                        });
                     }
                     // server responses,
                     @Override
