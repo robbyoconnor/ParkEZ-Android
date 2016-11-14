@@ -129,7 +129,7 @@ public class SignupActivity extends MainActivity {
                     email.setError("E-mail is required.");
                     valid = false;
                 } else if (!isValidEmail(email.getText().toString())) {
-                    email.setError("Not a valid E-mail");
+                    email.setError("Not a valid E-mail.");
                     valid = false;
                 }
                 valid = validatePassword();
@@ -160,13 +160,13 @@ public class SignupActivity extends MainActivity {
                 }
 
                 if (!pw1.matches(pw2)) {
-                    password1.setError("Passwords do not match");
-                    password2.setError("Passwords do not match");
+                    password1.setError("Passwords do not match.");
+                    password2.setError("Passwords do not match.");
                     valid = false;
 
                 } else if(pw1.matches(pw2) && pw1.length() < 8){ // we assume since equal only check password1.
-                    password1.setError("Password must be 8 or more characters");
-                    password2.setError("Password must be 8 or more characters");
+                    password1.setError("Password must be 8 or more characters.");
+                    password2.setError("Password must be 8 or more characters.");
                     valid = false;
                 }
                 return valid;
