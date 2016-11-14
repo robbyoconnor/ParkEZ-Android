@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
         applicationId "com.herokuapp.parkez"
         minSdkVersion 15
-        targetSdkVersion 23
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
 
@@ -33,12 +33,12 @@ dependencies {
 
     // the google play services needed to use google map api
     // compile 'com.google.android.gms:play-services:8.4.0'
-    compile 'com.google.android.gms:play-services-maps:8.4.0'
+    compile 'com.google.android.gms:play-services-maps:9.8.0'
 
-    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:appcompat-v7:25.0.0'
     compile 'com.squareup.okhttp3:okhttp:3.2.0'
     compile 'com.github.wnameless.jsonapi:japison:0.2.0'
-    compile 'com.android.support:design:23.3.0'
-    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.android.support:design:25.0.0'
+    compile 'com.google.code.gson:gson:2.7'
     compile 'com.navercorp.pulltorefresh:library:3.2.0@aar'
 }
